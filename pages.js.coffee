@@ -13,7 +13,7 @@ closePanels = (button, originalHeight) ->
   $(button).nextAll('.sidebar .button').css('top', heightToMove)
 
 $ ->
-  # Set up sidebar (fix for css3 height transitions bug in Chrome)
+  # Set up sidebar (workaround for css3 height transitions bug in Chrome)
   originalHeight = $('.sidebar').height()
   $('.sidebar').css('height', originalHeight)
   setTimeout showSidebar, 500
@@ -23,7 +23,6 @@ $ ->
   # Add shadows to the top of the sub-buttons
   $.each($('.sidebar .button'), (i, button) ->
     $(button).find('.sub-button').first().addClass('first')
-    console.log($(button).find('.sub-button').first())
   )
 
   $('.sidebar .button').live('click', ->
