@@ -1,0 +1,102 @@
+// Music playing sidebar
+// © Copyright 2012 Evan Tann
+
+.sidebar {
+  background-color: #fafafa;
+  overflow: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.sidebar .button {
+  position: relative;
+  height: 36px;
+  color: white;
+  font-weight: 200;
+  background: #717a86; /* Old browsers */
+  background: -moz-linear-gradient(top,  #717a86 0%, #505965 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#717a86), color-stop(100%,#505965)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #717a86 0%,#505965 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #717a86 0%,#505965 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #717a86 0%,#505965 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #717a86 0%,#505965 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#717a86', endColorstr='#505965',GradientType=0 ); /* IE6-9 */
+  border-top: #878e98 1px solid;
+  border-bottom: #33373d 1px solid;
+  border-left: #5d6570 1px solid;
+  border-right: #5d6570 1px solid;
+  transition: top .5s ease-in-out;
+  -webkit-transition: top .5s ease-in-out;
+  -moz-transition: top .5s ease-in-out;
+  -o-transition: top .5s ease-in-out;
+  z-index: 2;
+}
+
+.sidebar .button.active {
+  background: #44c6eb; /* Old browsers */
+  background: -moz-linear-gradient(top,  #44c6eb 0%, #34aadb 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#44c6eb), color-stop(100%,#34aadb)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #44c6eb 0%,#34aadb 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #44c6eb 0%,#34aadb 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #44c6eb 0%,#34aadb 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #44c6eb 0%,#34aadb 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#44c6eb', endColorstr='#34aadb',GradientType=0 ); /* IE6-9 */
+  border-top: #6ad2ef 1px solid;
+  border-bottom: #1a638f 1px solid;
+  border-left: #34aadb 1px solid;
+  border-right: #34aadb 1px solid;
+}
+
+.sidebar .button .content {
+  margin: 8px 0 10px 15px;
+}
+
+.sidebar .sub-button {
+  display: inline-block;
+  color: #999;
+  background-color: #fafafa;
+  border-bottom: #ddd 1px solid;
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar .sub-button .content {
+  margin: 10px 0 10px 15px;
+}
+
+.sidebar .sub-button.first {
+  position: relative;
+  margin: -1px 0 0 -1px;
+  width: 103%;
+  background: #cccccc; /* Old browsers */
+  background: -moz-linear-gradient(top,  #cccccc 0%, #fafafa 18%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(18%,#fafafa)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #cccccc 0%,#fafafa 18%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #cccccc 0%,#fafafa 18%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #cccccc 0%,#fafafa 18%); /* IE10+ */
+  background: linear-gradient(to bottom,  #cccccc 0%,#fafafa 18%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#fafafa',GradientType=0 ); /* IE6-9 */
+}
+
+.sidebar .sub-button.active {
+  background: #e3e3e3;
+  border-top: #ccc 1px solid;
+  border-bottom: #fff 1px solid;
+  width: 103%;
+}
+
+// Override Bootstrap's label defaults
+.sidebar label {
+  margin: none;
+  display: inline;
+}
+
+.sidebar-background {
+  height: 600px;
+  background-color: #ddd;
+  border-right: #eee 1px solid;
+}
