@@ -1,9 +1,9 @@
 # Sidebar
 
-**Demo:** (http://sidebar-demo.herokuapp.com/)
+**Demo:** http://sidebar-demo.herokuapp.com/
 
-A free and open-source sidebar by Evan Tann for use in your projects. The CSS depends on Bootstrap, and was tested with Bootstrap v2.1.1, which I have included for convenience.
+A free and open-source sidebar by Evan Tann for use in your projects. The CSS depends on Bootstrap.
 
-The design of the sidebar is courtesy of [Premium Pixels](http://premiumpixels.com).
+This was tested with Bootstrap v2.1.1, which I have included for convenience. The design of the sidebar is courtesy of [Premium Pixels](http://premiumpixels.com).
 
 (MIT License)
